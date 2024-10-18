@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-like Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #1877f2;
+            padding: 10px 20px;
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            height: 80px;
+        }
+
+        .logo {
+            margin-right: 20px; /* Optional spacing between logo and other elements */
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%; /* Make the logo round */
+        }
+
+        .login-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            margin-top: 50px;
+        }
+
+        .login-box h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: black;  /* Make "Facebook" text black */
+            font-weight: bold;  /* Make "Facebook" text bold */
+        }
+
+        .textbox {
+            margin-bottom: 20px;
+            text-align: center; /* Center the text and elements */
+        }
+
+        .textbox label {
+            font-size: 14px;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .textbox input {
+            width: 90%; /* Set width to 90% for centering */
+            padding: 10px;
+            border: 1px solid #dddfe2;
+            border-radius: 5px;
+            background-color: #f0f2f5;
+            text-align: center; /* Center text inside the input */
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #165db7;
+        }
+
+        .links {
+            margin-top: 10px;
+        }
+
+        .links a {
+            color: #1877f2;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="Screenshot 2024-10-18 153409.png" alt="Facebook Logo">
+        </div>
+    </div>
+
+    <div class="login-box">
+        <h2>Facebook</h2>
+        <form>
+            <div class="textbox">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" placeholder="" required>
+            </div>
+            <div class="textbox">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="" required>
+            </div>
+            <button type="submit" class="btn">Log In</button>
+        </form>
+        <div class="links">
+            <a href="#">Forgot Password?</a> · 
+            <a href="#">Sign Up for Facebook</a>
+        </div>
+    </div>
+
+    <footer>
+        2024 Facebook-like Website
+    </footer>
+</body>
+</html>
